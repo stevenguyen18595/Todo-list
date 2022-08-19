@@ -1,6 +1,25 @@
+h3{
+    font-family: "Brush Script MT","Cursive";
+    font-size: 300%;
+    color: black !important;
+    margin-left: 2%;
+    margin-bottom: 2rem !important;
+}
+h4{
+    font-family: "Brush Script MT","Cursive";
+    font-size: 300%;
+    color: black !important;
+    margin-top: 2rem;
+}
 .stevenguyen_logo {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .stevenguyen_logo img{
     border-radius: 50%;
+}
+
+.my-name {
+    font-family: "Brush Script MT","Cursive";
+    font-size: 600%;
+    color: rgb(0, 0, 0) !important;
 }
