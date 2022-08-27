@@ -8,30 +8,30 @@
         <h1 class="h1-todo">Todo List</h1>
         <form [formGroup]="todoFormGroup">
           <div class="row">
-            <div class="col-lg-8">
-              <mat-form-field appearance="fill">
+            <div class="col-8 d-flex justify-content-center">
+              <mat-form-field appearance="outline">
                 <mat-label>Add a todo . . .</mat-label>
                 <textarea formControlName="todoItem" matInput placeholder="What is your plan ....."></textarea>
-                <span matSuffix><mat-icon>alarm</mat-icon></span>
+                <span matSuffix>
+                  <mat-icon>alarm</mat-icon>
+                </span>
               </mat-form-field>
             </div>
-            <div class="col-lg-2">
-              <button (click)="createItem()" mat-raised-button> Add</button>
+            <div class="col-4 d-flex justify-content-center">
+              <button (click)="createItem()" mat-mini-fab> Add</button>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <div class="col col-lg-2">
-    </div>
   </div>
-  <div class="row justify-content-center" >
-    <div class="col-lg-8">
-      <form action="">
-        <mat-list  *ngFor="let item of itemList">
-          <mat-list-item>{{item}}</mat-list-item>
-        </mat-list>
-      </form>
+  <div></div>
+  <div class="row justify-content-center">
+    <div class="row">
+      <mat-list class *ngFor="let item of itemList" ngClass="inline-list">
+        <mat-list-item>{{item}}</mat-list-item>
+        <button (click)="createItem()" mat-mini-fab>remove</button>
+      </mat-list>
     </div>
   </div>
 </div>

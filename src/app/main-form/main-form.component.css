@@ -1,7 +1,10 @@
+/*main color for our website #75ada1 */
 mat-form-field{
-    width: 100% !important;
+    width: 20rem !important;
 }
-
+.inline-list {
+    display: flex;
+}
 .h1-todo{
     text-align: center;
     font-family: "Brush Script MT","Cursive";
@@ -10,14 +13,60 @@ mat-form-field{
     margin-top: 2rem;
 }
 button {
-    width: 100%;
-    height: 80%;
-    font-size: 20px;
+    text-align: center;
+    font-family: "Brush Script MT","Cursive";
+    width: 6rem;
+    height: 6rem;
+    font-size: 40px;
+}
+button.mat-mini-fab{
+    background-color: #75ada1;
 }
 mat-list-item{
-    border: 2px solid black;
+    border: 2px solid #75ada1;
     font-size: 20px !important;
+}
+mat-list-item.mat-list-item{
+    height:6rem;
 }
 mat-form-field{
     font-size: 20px;
+}
+/* the below code is used for phone */
+@media only screen and (max-width: 480px) {
+    .h1-todo{
+        text-align: center;
+        font-family: "Brush Script MT","Cursive";
+        font-size: 4rem;
+        color: black !important;
+        margin-top: 2rem;
+    }
+    mat-form-field{
+        width: 15rem !important;
+        height: 3rem !important;
+    }
+    
+    button {
+        text-align: center;
+        font-family: "Brush Script MT","Cursive";
+        width: 4rem;
+        height: 4rem;
+        font-size: 19px;
+    }
+    mat-form-field{
+        font-size: 14px;
+    }
+
+    mat-list-item.mat-list-item{
+        height:4rem;
+    }
+}
+/* Low resolution ipad */
+@media only screen and (max-width:767px){
+
+}
+
+/* high resolution tablet ipad */
+@media only screen and (max-width:1024px){
+
 }
