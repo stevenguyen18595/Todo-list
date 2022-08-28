@@ -108,7 +108,12 @@
     margin-bottom: 6rem;
     background: url(../img/bg-header.png) left top no-repeat;
 }
-
+@media only screen and (max-width:480px) {
+    #home{
+        background: url(../img/bg-header.png) left top no-repeat;
+        background-size: 35rem 7rem;
+    }
+}
 .typed-cursor {
     font-size: 30px;
     color: var(--dark);

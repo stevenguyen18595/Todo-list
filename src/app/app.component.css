@@ -1,37 +1,86 @@
-h3{
-    font-family: "Brush Script MT","Cursive";
-    font-size: 300%;
-    color: black !important;
-    margin-left: 2%;
-    margin-bottom: 2rem !important;
+h3 {
+  font-family: "Brush Script MT", "Cursive";
+  font-size: 300%;
+  color: black !important;
+  margin-left: 2%;
+  margin-bottom: 2rem !important;
 }
-h4{
-    font-family: "Brush Script MT","Cursive";
-    font-size: 300%;
-    color: black !important;
-    margin-top: 2rem;
+h4 {
+  font-family: "Brush Script MT", "Cursive";
+  font-size: 300%;
+  color: black !important;
+  margin-top: 2rem;
+}
+hr {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1rem;
+  background-color: #75ada1;
+}
+.container-fluid {
+  margin-bottom: 0rem !important;
 }
 .stevenguyen_logo {
-    margin-top: 5%;
-    border-radius: 50%;
-    background: transparent;
-    padding: 8px;
-    border: px solid #ccc;
-    box-shadow: 10px 10px 10px #999;
+  display: block;
+  margin-top: 5%;
+  border-radius: 50%;
+  background: transparent;
+  padding: 8px;
+  align-content: center;
+  align-items: center;
+  border: 3px solid #ccc;
+  box-shadow: 10px 10px 10px #999;
 }
-.stevenguyen_logo img{
-    border-radius: 50%;
+.stevenguyen_logo img {
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+  border-radius: 50%;
 }
-
+.btn {
+  background-color: #75ada1;
+  border-color: #75ada1;
+}
 .my-name {
-    font-family: "Brush Script MT","Cursive";
-    font-size: 600%;
-    color: rgb(0, 0, 0) !important;
+  font-family: "Brush Script MT", "Cursive";
+  font-size: 600%;
+  color: rgb(0, 0, 0) !important;
 }
 @media only screen and (max-width: 480px) {
-    .my-name {
-        font-family: "Brush Script MT","Cursive";
-        font-size: 500%;
-        color: rgb(0, 0, 0) !important;
-    }   
+  hr {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 0.5rem;
+    background-color: #75ada1;
+    opcaity: 0.5;
+  }
+  .btn {
+    background-color: #75ada1;
+    border-color: #75ada1;
+    margin-top: 1.5rem;
+  }
+  .my-name {
+    font-family: "Brush Script MT", "Cursive";
+    font-size: 500%;
+    color: rgb(0, 0, 0) !important;
+  }
+  .stevenguyen_logo {
+    height: 21.3rem;
+    width: 22rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-radius: 50%;
+    background-color: transparent;
+    padding-bottom: 0rem;
+    border-color: #75ada1;
+  }
+  .stevenguyen_logo img {
+    height: 20rem;
+    width: 20rem;
+  }
 }
