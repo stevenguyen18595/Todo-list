@@ -15,8 +15,8 @@ hr {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-  height: 1rem;
-  background-color: #75ada1;
+  height: 0.5rem;
+  background-color: #028e6f;
 }
 .container-fluid {
   margin-bottom: 0rem !important;
@@ -56,8 +56,7 @@ hr {
     margin-bottom: 0px;
     padding: 0px;
     height: 0.5rem;
-    background-color: #75ada1;
-    opcaity: 0.5;
+    background-color: #028e6f;
   }
   .btn {
     background-color: #75ada1;
