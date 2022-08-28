@@ -34,6 +34,13 @@ mat-list-item.mat-list-item {
 mat-form-field {
   font-size: 20px;
 }
+/* high resolution tablet ipad */
+@media only screen and (max-width: 1624px) and (min-width: 1000px) {
+  mat-form-field {
+    width: 35rem !important;
+    height: 3rem !important;
+  }
+}
 /* the below code is used for phone */
 @media only screen and (max-width: 480px) {
   .h1-todo {
@@ -65,8 +72,4 @@ mat-form-field {
 }
 /* Low resolution ipad */
 @media only screen and (max-width: 767px) {
-}
-
-/* high resolution tablet ipad */
-@media only screen and (max-width: 1024px) {
 }
