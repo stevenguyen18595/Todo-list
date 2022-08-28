@@ -7,7 +7,7 @@ h3 {
 }
 h4 {
   font-family: "Brush Script MT", "Cursive";
-  font-size: 300%;
+  font-size: 200%;
   color: black !important;
   margin-top: 2rem;
 }
@@ -41,13 +41,27 @@ hr {
 .btn {
   background-color: #75ada1;
   border-color: #75ada1;
+  font-family: "Papyrus", "Fantasy";
 }
 .my-name {
-  font-family: "Brush Script MT", "Cursive";
+  font-family: "Papyrus", "Fantasy";
   font-size: 600%;
   color: rgb(0, 0, 0) !important;
 }
 @media only screen and (max-width: 480px) {
+  h3 {
+    font-family: "Papyrus", "Fantasy";
+    font-size: 300%;
+    color: black !important;
+    margin-left: 2%;
+    margin-bottom: 2rem !important;
+  }
+  h4 {
+    font-family: "Papyrus", "Fantasy";
+    font-size: 170%;
+    color: black !important;
+    margin-top: 2rem;
+  }
   hr {
     width: 200px;
     margin-left: auto;
@@ -56,7 +70,7 @@ hr {
     margin-bottom: 0px;
     padding: 0px;
     height: 0.5rem;
-    background-color: #028e6f;
+    background-color: transparent;
   }
   .btn {
     background-color: #75ada1;
@@ -64,14 +78,14 @@ hr {
     margin-top: 1.5rem;
   }
   .my-name {
-    font-family: "Brush Script MT", "Cursive";
-    font-size: 500%;
+    font-family: "Papyrus", "Fantasy";
+    font-size: 300%;
     color: rgb(0, 0, 0) !important;
   }
   .stevenguyen_logo {
-    height: 21.3rem;
-    width: 22rem;
-    margin-top: 0rem;
+    height: 12.4rem;
+    width: 12.4rem;
+    margin-top: 6rem;
     margin-bottom: 0rem;
     border-radius: 50%;
     background-color: transparent;
@@ -79,7 +93,7 @@ hr {
     border-color: #75ada1;
   }
   .stevenguyen_logo img {
-    height: 20rem;
-    width: 20rem;
+    height: 11rem;
+    width: 11rem;
   }
 }
