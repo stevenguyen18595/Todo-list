@@ -26,8 +26,8 @@
   <div class="row justify-content-center">
     <div class="row">
       <mat-list class *ngFor="let item of itemList" ngClass="inline-list">
-        <mat-list-item>{{item}}</mat-list-item>
-        <button (click)="createItem()" mat-mini-fab>remove</button>
+        <mat-list-item>{{item.value}}</mat-list-item>
+        <button (click)="removeItem(item.value)" mat-mini-fab>remove</button>
       </mat-list>
     </div>
   </div>

@@ -7,8 +7,7 @@ import { Form, FormBuilder, FormControl, FormGroup, Validators } from '@angular/
   styleUrls: ['./main-form.component.css']
 })
 export class MainFormComponent implements OnInit,OnDestroy {
-
-  itemList: string[] = []
+  itemList: TodoItem[] = []
   todoFormGroup: FormGroup;
   formBuilder: FormBuilder;
   constructor(fb: FormBuilder) {
@@ -31,12 +30,21 @@ export class MainFormComponent implements OnInit,OnDestroy {
       }
     )
   }
-  getValue(){
+  getValueFromForm(){
     return this.todoFormGroup.value.todoItem;
   }
+  createATodoItem(): TodoItem{
+    return new TodoItem (this.getValueFromForm());
+  }
   createItem(){
-    this.itemList.push(this.getValue())
-    this.todoFormGroup.reset();
+    this.itemList.push(this.createATodoItem());
+    console.log('show itemlist when create'+ this.itemList.length);
+  }
+  removeItem(value:string){
+    this.itemList.forEach((element,index)=>{
+      if(element.value == value) this.itemList.splice(index,1);
+    })
+    console.log('show item list when remove' +this.itemList.length)
   }
 }
 
@@ -45,7 +53,7 @@ export interface TodoForm {
 }
 export class TodoItem {
 
-  constructor(public anItem: string){
+  constructor(public value: string){
 
   }
 }
