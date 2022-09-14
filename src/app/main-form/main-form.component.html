@@ -3,11 +3,12 @@
     <div class="col-lg-8">
       <div class="row ">
         <h1 class="h1-todo">Todo List</h1>
+        <hr>
         <form [formGroup]="todoFormGroup">
           <div class="row g-2">
             <div class="col-9 d-flex justify-content-center">
               <mat-form-field appearance="outline">
-                <mat-label>Add a todo . . .</mat-label>
+                <mat-label>Add a todo item . . .</mat-label>
                 <textarea formControlName="todoItem" matInput placeholder="What is your plan ....."></textarea>
                 <span matSuffix>
                   <mat-icon>alarm</mat-icon>
@@ -27,7 +28,7 @@
     <div class="row">
       <mat-list class *ngFor="let item of itemList" ngClass="inline-list">
         <mat-list-item>{{item.value}}</mat-list-item>
-        <button (click)="removeItem(item.value)" mat-mini-fab>remove</button>
+        <button (click)="removeItem(item.value)" mat-mini-fab>-</button>
       </mat-list>
     </div>
   </div>

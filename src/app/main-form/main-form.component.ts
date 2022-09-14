@@ -39,6 +39,8 @@ export class MainFormComponent implements OnInit,OnDestroy {
   createItem(){
     this.itemList.push(this.createATodoItem());
     console.log('show itemlist when create'+ this.itemList.length);
+    this.todoFormGroup.reset();
+
   }
   removeItem(value:string){
     this.itemList.forEach((element,index)=>{

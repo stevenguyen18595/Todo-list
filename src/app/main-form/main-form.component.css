@@ -1,6 +1,6 @@
 /*main color for our website #75ada1 */
 mat-form-field {
-  width: 20rem !important;
+  width: 100% !important;
 }
 .inline-list {
   display: flex;
@@ -19,6 +19,7 @@ button {
   height: 6rem;
   font-size: 40px;
   padding: 0px;
+  margin-left: 1rem;
 }
 button.mat-mini-fab {
   background-color: #75ada1;
@@ -30,6 +31,7 @@ mat-list-item {
 }
 mat-list-item.mat-list-item {
   height: 6rem;
+  width: 80%;
 }
 mat-form-field {
   font-size: 20px;
